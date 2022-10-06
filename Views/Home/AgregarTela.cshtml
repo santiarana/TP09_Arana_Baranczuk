@@ -1,0 +1,10 @@
+<form method="post" action = '@Url.Action("GuardarTela","Home")' enctype="multipart/form-data">
+    <input type="hidden" id="IdTela" name="IdTela" value=@ViewBag.IdTela>
+    Nombre:
+    <input type="text" id="NombreTela" name="Nombre" placeholder="Nombre" required></br>
+    Foto:
+    <input type="file" id="Foto" name="File" required></br>
+    Precio:
+    <input type="number" id="Precio" name="Precio" required></br>
+    <button type="submit">Agregar Tela</button>
+</form>

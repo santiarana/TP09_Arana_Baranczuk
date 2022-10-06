@@ -1,0 +1,41 @@
+<div class="container text-center">   
+        <div class="row align-items-start">
+            @{
+                foreach(Productos item in @ViewBag.ListaProductos)
+                {
+                <div class="col">
+                
+                    <div class="card Carta">
+                        <img src="@item.FotoProducto" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="card-title txtCard">@item.Nombre</div>
+                        <div class="col">
+                            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#ModalProductos" onclick="MostrarProducto(@item.IdProducto,'@item.Nombre')">
+                                Más info
+                            </button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                }
+                <a class="btn btn-lg, boton" href='@Url.Action("AgregarProducto","Home", new{IdProducto=@ViewBag.Producto.IdProducto})' role="button">Agregar Producto</a>
+            }
+        </div>
+    </div>
+    
+<div class="modal fade" id="ModalSerie" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="TituloModal"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id="TextoModal">
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

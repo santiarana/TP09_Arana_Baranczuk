@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lsGCeyPbunhhv5/85XxS5bwrEWGh/gzvddEm8uT2S0U=",
+  "Hash": "byUrC44COYCNQIrpbQEIsqCn4ARfV01vvq42ggxoOE0=",
   "Source": "TP09_Arana_Baranczuk",
   "BasePath": "_content/TP09_Arana_Baranczuk",
   "Mode": "Default",
@@ -49,6 +49,57 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\46876761\\Downloads\\TP09_Arana_Baranczuk\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TP09_Arana_Baranczuk.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\46876761\\Downloads\\TP09_Arana_Baranczuk\\wwwroot\\carrusel1.png",
+      "SourceId": "TP09_Arana_Baranczuk",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\46876761\\Downloads\\TP09_Arana_Baranczuk\\wwwroot\\",
+      "BasePath": "_content/TP09_Arana_Baranczuk",
+      "RelativePath": "carrusel1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\carrusel1.png"
+    },
+    {
+      "Identity": "C:\\Users\\46876761\\Downloads\\TP09_Arana_Baranczuk\\wwwroot\\carrusel2.jpg",
+      "SourceId": "TP09_Arana_Baranczuk",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\46876761\\Downloads\\TP09_Arana_Baranczuk\\wwwroot\\",
+      "BasePath": "_content/TP09_Arana_Baranczuk",
+      "RelativePath": "carrusel2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\carrusel2.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\46876761\\Downloads\\TP09_Arana_Baranczuk\\wwwroot\\carrusel3.jpg",
+      "SourceId": "TP09_Arana_Baranczuk",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\46876761\\Downloads\\TP09_Arana_Baranczuk\\wwwroot\\",
+      "BasePath": "_content/TP09_Arana_Baranczuk",
+      "RelativePath": "carrusel3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\carrusel3.jpg"
     },
     {
       "Identity": "C:\\Users\\46876761\\Downloads\\TP09_Arana_Baranczuk\\wwwroot\\css\\site.css",
@@ -1086,6 +1137,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\46876761\\Downloads\\TP09_Arana_Baranczuk\\wwwroot\\logo.png",
+      "SourceId": "TP09_Arana_Baranczuk",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\46876761\\Downloads\\TP09_Arana_Baranczuk\\wwwroot\\",
+      "BasePath": "_content/TP09_Arana_Baranczuk",
+      "RelativePath": "logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\logo.png"
     }
   ]
 }

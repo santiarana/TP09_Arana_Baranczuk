@@ -1,0 +1,18 @@
+<form method="post" action = '@Url.Action("GuardarProducto","Home")' enctype="multipart/form-data">
+    <input type="hidden" id="IdProducto" name="IdProducto" value=@ViewBag.IdProducto>
+    Nombre:
+    <input type="text" id="NombreProducto" name="Nombre" placeholder="Nombre" required></br>
+    Foto:
+    <input type="file" id="FotoProducto" name="File" required></br>
+    Tela:
+    <input type="text" id="IdTela" name="Nombre" required></br>
+    Color:
+    <input type="text" id="IdColor" name="Nombre"  required></br>
+    Fecha de ingreso:
+    <input type="date" id="FechaIngreso" name="FechaIngreso" required></br>
+    Cantidad disponible:
+    <input type="number" id="CantidadDisponible" name="CantidadDisponible" required></br>
+    Peso:
+    <input type="number" id="Peso" name="Peso" required></br>
+    <button type="submit">Agregar Producto</button>
+</form>

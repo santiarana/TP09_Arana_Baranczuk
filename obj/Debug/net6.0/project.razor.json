@@ -16298,6 +16298,16 @@
   "RootNamespace": "TP09_Arana_Baranczuk",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\46876761\\Downloads\\TP09_Arana_Baranczuk\\Views\\Home\\AgregarTela.cshtml",
+      "TargetPath": "Views\\Home\\AgregarTela.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\46876761\\Downloads\\TP09_Arana_Baranczuk\\Views\\Home\\AgregarProducto.cshtml",
+      "TargetPath": "Views\\Home\\AgregarProducto.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\46876761\\Downloads\\TP09_Arana_Baranczuk\\Views\\Home\\Telas.cshtml",
       "TargetPath": "Views\\Home\\Telas.cshtml",
       "FileKind": "mvc"
@@ -16315,6 +16325,11 @@
     {
       "FilePath": "c:\\Users\\46876761\\Downloads\\TP09_Arana_Baranczuk\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\46876761\\Downloads\\TP09_Arana_Baranczuk\\Views\\Home\\AgregarColor.cshtml",
+      "TargetPath": "Views\\Home\\AgregarColor.cshtml",
       "FileKind": "mvc"
     },
     {
