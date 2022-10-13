@@ -6,9 +6,10 @@ namespace TP09_ARANA_BARANCZUK.Models;
         private  int _IdColor;
         private  string _Nombre;
         private  string _FotoColor;
+        private int _IdTela;
        
         
-        public Color(int IdColor, string Nombre,string FotoColor)
+        public Color(int IdColor, string Nombre,string FotoColor,int IdTela)
         {
             _IdColor = IdColor;
             _Nombre = Nombre;
@@ -34,6 +35,12 @@ namespace TP09_ARANA_BARANCZUK.Models;
         {
             get{return _FotoColor;}
             set { _FotoColor = value; }
+
+        } 
+         public int IdTela
+        {
+            get{return _IdTela;}
+            set { _IdTela = value; }
 
         } 
    
