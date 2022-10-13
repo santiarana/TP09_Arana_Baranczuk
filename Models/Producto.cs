@@ -1,5 +1,5 @@
 using System; 
-namespace TP09_ARANA_BARANCZUK.Models;
+namespace TP09_Arana_Baranczuk.Models;
 
   public class Producto 
     {
@@ -12,10 +12,10 @@ namespace TP09_ARANA_BARANCZUK.Models;
         private int _CantidadDisponible;
         private float _Peso;
         private string _NombreTela;
-        private string _Nombre; 
+        private string _NombreColor; 
        
         
-        public Producto(int IdProducto, string NombreProducto,string FotoProducto,int IdTela, int IdColor, DateTime FechaDeIngreso, int CantidadDisponible, float Peso,string NombreTela, string Nombre)
+        public Producto(int IdProducto, string NombreProducto,string FotoProducto,int IdTela, int IdColor, DateTime FechaDeIngreso, int CantidadDisponible, float Peso,string NombreTela, string NombreColor)
         {
             _IdProducto = IdProducto;
             _NombreProducto = NombreProducto;
@@ -26,7 +26,7 @@ namespace TP09_ARANA_BARANCZUK.Models;
             _CantidadDisponible = CantidadDisponible;
             _Peso = Peso; 
             _NombreTela = NombreTela;
-            _Nombre = Nombre; 
+            _NombreColor = NombreColor; 
          
         }
         public Producto()
@@ -89,10 +89,10 @@ namespace TP09_ARANA_BARANCZUK.Models;
             set { _NombreTela = value; }
 
         } 
-        public string Nombre
+        public string NombreColor
         {
-            get{return _Nombre;}
-            set { _Nombre = value; }
+            get{return _NombreColor;}
+            set { _NombreColor = value; }
 
         } 
    

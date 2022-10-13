@@ -1,5 +1,5 @@
 using System; 
-namespace TP09_ARANA_BARANCZUK.Models;
+namespace TP09_Arana_Baranczuk.Models;
 
 public class Tela
     {

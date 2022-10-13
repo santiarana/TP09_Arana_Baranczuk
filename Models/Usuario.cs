@@ -1,9 +1,9 @@
 using System; 
-namespace TP09_ARANA_BARANCZUK.Models;
+namespace TP09_Arana_Baranczuk.Models;
   public class Usuario
     {
         private  int _IdUsuario;
-        private  string _Clave  ;
+        private  string _Clave;
         
        
         

@@ -8,9 +8,9 @@
                     <div class="card Carta">
                         <img src="@item.FotoTela" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <div class="card-title">@item.Nombre</div>
+                        <div class="card-title">@item.NombreTela</div>
                         <div class="col">
-                            <a href='@Url.Action("Color", new {Telas=@Tela.Color})'>
+                            <a href='@Url.Action("Color", new {Telas=@Tela.IdTela})'>
                                 Ver color 
                             </a>
                         </div>

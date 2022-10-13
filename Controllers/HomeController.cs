@@ -1,6 +1,8 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using TP09_Arana_Baranczuk.Models;
+using System.IO;
+using Microsoft.AspNetCore.Hosting;
 
 namespace TP09_Arana_Baranczuk.Controllers;
 
@@ -16,35 +18,34 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        ViewBag.ListaTelas = BD.ListaTela();
         return View();
     }
     
     public IActionResult VerDetalleTelas(int IdTela, int IdColor)
     {
-        ViewBag.DetalleTelas=BD.getTela(IdTela);
-        ViewBag.ListaColores = BD.ListaColor(IdColor);
+        ViewBag.DetalleTelas=BD.DetalleTela(IdTela);
+        ViewBag.ListaColores = BD.GetColor(IdColor);
         return View("Telas");
     }
     public IActionResult VerDetalleColores(int IdColor)
     {
-        ViewBag.DetalleColores=BD.getColor(IdColor);
-        ViewBag.ListaProductos = BD.ListaProducto(IdColor);
+        ViewBag.DetalleColores=BD.DetalleColor(IdColor);
+        ViewBag.ListaProductos = BD.GetProducto(IdColor);
         return View("Color");
     }
     
     public IActionResult EliminarColor(int IdColor)
     {
         
-        BD.EliminarColor(IdColor);
-        ViewBag.DetalleColores=BD.getColor(IdColor);
-        ViewBag.ListaProductos = BD.ListaProducto(IdColor);       
+        BD.DeleteColorById(IdColor);
+        ViewBag.DetalleColores=BD.GetColor(IdColor);
+        ViewBag.ListaProductos = BD.GetProducto(IdColor);       
         return View("Color");
     }
 
     public IActionResult VerDetalleProducto(int IdProducto)
     {
-        ViewBag.DetalleProducto = BD.getProducto(IdProducto);
+        ViewBag.DetalleProducto = BD.DetalleProducto(IdProducto);
         return View("Productos");
     }
     public IActionResult AgregarProducto(int IdProducto)
@@ -55,7 +56,7 @@ public class HomeController : Controller
     [HttpPost]
     public IActionResult GuardarProducto(Producto prod, IFormFile File, int IdProducto, int IdColor)
     {
-        prod.FotoProducto=prod.Nombre + ".jpg";
+        prod.FotoProducto=prod.NombreProducto + ".jpg";
         if(File.Length>0)
         {
             string wwwRootLocal = this.Environment.ContentRootPath + @"\wwwroot\" + prod.FotoProducto;
@@ -64,16 +65,16 @@ public class HomeController : Controller
                 File.CopyToAsync(stream);
             }
         }
-        BD.AgregarProducto(prod);
-        ViewBag.DetalleProducto = BD.getProducto(IdProducto);
-        ViewBag.ListaProductos = BD.ListaProducto(IdColor);
+        BD.InsertProducto(prod);
+        ViewBag.DetalleProducto = BD.DetalleProducto(IdProducto);
+        ViewBag.ListaProductos = BD.GetProducto(IdColor);
         return View("VerDetalleEquipo");
     }
     public IActionResult EliminarProducto(int IdProducto)
     {
         
         BD.EliminarProducto(IdProducto);
-        ViewBag.DetalleProducto = BD.getProducto(IdProducto);
+        ViewBag.DetalleProducto = BD.DetalleProducto(IdProducto);
         return View("Productos");
     }
 
