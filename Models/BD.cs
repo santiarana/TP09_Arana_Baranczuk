@@ -95,4 +95,13 @@ public static class BD
         }
         return col;
     }
+    public static List<Usuario> GetUsuario()
+    {
+        List<Usuario> _ListaUsuario = new List<Usuario>();
+        using (SqlConnection db = new SqlConnection(_connectionString))
+        {
+            
+        }
+    }
+    
 }
