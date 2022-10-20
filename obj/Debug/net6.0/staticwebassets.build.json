@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "byUrC44COYCNQIrpbQEIsqCn4ARfV01vvq42ggxoOE0=",
+  "Hash": "hZAxnf5Ql+dE9xNKYGx6yAhKztsqUQGG8R4nlu6nzrg=",
   "Source": "TP09_Arana_Baranczuk",
   "BasePath": "_content/TP09_Arana_Baranczuk",
   "Mode": "Default",
@@ -134,23 +134,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
-    },
-    {
-      "Identity": "C:\\Users\\46876761\\Downloads\\TP09_Arana_Baranczuk\\wwwroot\\fondo.jpg",
-      "SourceId": "TP09_Arana_Baranczuk",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\46876761\\Downloads\\TP09_Arana_Baranczuk\\wwwroot\\",
-      "BasePath": "_content/TP09_Arana_Baranczuk",
-      "RelativePath": "fondo.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\fondo.jpg"
     },
     {
       "Identity": "C:\\Users\\46876761\\Downloads\\TP09_Arana_Baranczuk\\wwwroot\\js\\site.js",

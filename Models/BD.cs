@@ -17,23 +17,23 @@ public static class BD
         }
         return _ListaTela;
     }
-    public static List<Color> GetColor(int IdColor)
+    public static List<Color> GetColor(int IdTela)
     {
         List<Color> _ListaColor = new List<Color>();
         using (SqlConnection db = new SqlConnection(_connectionString))
         {
-            string sql = "SELECT * FROM Color";
-            _ListaColor = db.Query<Color>(sql).ToList();
+            string sql = "SELECT * FROM Color WHERE IdTela = @pTela";
+            _ListaColor = db.Query<Color>(sql, new{pTela = IdTela}).ToList();
         }
         return _ListaColor;
     }
-    public static List<Producto> GetProducto(int IdProducto)
+    public static List<Producto> GetProductoColor(int idPete)
     {
         List<Producto> _ListaProducto = new List<Producto>();
         using (SqlConnection db = new SqlConnection(_connectionString))
         {
-            string sql = "SELECT * FROM Producto";
-            _ListaProducto = db.Query<Producto>(sql).ToList();
+            string sql = "SELECT * FROM Producto WHERE idColor = @pPete";
+            _ListaProducto = db.Query<Producto>(sql, new{pPete = idPete}).ToList();
         }
         return _ListaProducto;
     }
@@ -94,5 +94,16 @@ public static class BD
             col = db.QueryFirstOrDefault<Color>(sql, new { pIdColor = IdColor });
         }
         return col;
+    }
+
+    public static Producto VerInfoProductoAjax(int IdProducto)
+    {
+        Producto product = null;
+        using(SqlConnection db = new SqlConnection(_connectionString))
+        {
+            string sql = "SELECT * FROM Producto WHERE IdProducto = @pIdProducto";
+            product = db.QueryFirstOrDefault<Producto>(sql,new{PIdProducto = IdProducto});
+        }
+        return product;
     }
 }

@@ -4,9 +4,6 @@ namespace TP09_Arana_Baranczuk.Models;
     {
         private  int _IdUsuario;
         private  string _Clave;
-        
-       
-        
         public Usuario(int IdUsuario, string Clave)
         {
             _IdUsuario = IdUsuario;

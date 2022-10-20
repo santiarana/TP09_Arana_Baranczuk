@@ -21,16 +21,16 @@ public class HomeController : Controller
         return View();
     }
     
-    public IActionResult VerDetalleTelas(int IdTela, int IdColor)
+    public IActionResult VerDetalleTelas(int IdTela)
     {
+        ViewBag.ListaTelas = BD.GetTela(IdTela);
         ViewBag.DetalleTelas=BD.DetalleTela(IdTela);
-        ViewBag.ListaColores = BD.GetColor(IdColor);
         return View("Telas");
     }
-    public IActionResult VerDetalleColores(int IdColor)
+    public IActionResult VerDetalleColores(int IdTela)
     {
-        ViewBag.DetalleColores=BD.DetalleColor(IdColor);
-        ViewBag.ListaProductos = BD.GetProducto(IdColor);
+        ViewBag.ListaColores = BD.GetColor(IdTela);
+        ViewBag.DetalleColores=BD.DetalleColor(IdTela);
         return View("Color");
     }
     
@@ -39,22 +39,21 @@ public class HomeController : Controller
         
         BD.DeleteColorById(IdColor);
         ViewBag.DetalleColores=BD.GetColor(IdColor);
-        ViewBag.ListaProductos = BD.GetProducto(IdColor);       
+        ViewBag.ListaProductos = BD.GetProductoColor(IdColor);       
         return View("Color");
     }
 
-    public IActionResult VerDetalleProducto(int IdProducto)
+    public IActionResult VerDetalleProducto(int IdColor)
     {
-        ViewBag.DetalleProducto = BD.DetalleProducto(IdProducto);
+        ViewBag.ListaProductos = BD.GetProductoColor(IdColor);
         return View("Productos");
     }
-    public IActionResult AgregarProducto(int IdProducto)
+    public IActionResult AgregarProducto()
     {
-        ViewBag.IdProducto = IdProducto;
-        return View();
+        return View("AgregarProducto");
     }
     [HttpPost]
-    public IActionResult GuardarProducto(Producto prod, IFormFile File, int IdProducto, int IdColor)
+    public IActionResult GuardarProducto(Producto prod, IFormFile File, int IdColor)
     {
         prod.FotoProducto=prod.NombreProducto + ".jpg";
         if(File.Length>0)
@@ -66,9 +65,8 @@ public class HomeController : Controller
             }
         }
         BD.InsertProducto(prod);
-        ViewBag.DetalleProducto = BD.DetalleProducto(IdProducto);
-        ViewBag.ListaProductos = BD.GetProducto(IdColor);
-        return View("VerDetalleEquipo");
+        ViewBag.ListaProductos = BD.GetProductoColor(IdColor);
+        return View("Productos");
     }
     public IActionResult EliminarProducto(int IdProducto)
     {
@@ -76,6 +74,11 @@ public class HomeController : Controller
         BD.EliminarProducto(IdProducto);
         ViewBag.DetalleProducto = BD.DetalleProducto(IdProducto);
         return View("Productos");
+    }
+    public Producto VerDetalleProductoAjax(int IdProducto)
+    {
+        ViewBag.Producto = BD.VerInfoProductoAjax(IdProducto);
+        return ViewBag.Producto;
     }
 
     public IActionResult Privacy()

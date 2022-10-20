@@ -24,3 +24,11 @@ C:\Users\46876761\Downloads\TP09_Arana_Baranczuk\obj\Debug\net6.0\refint\TP09_Ar
 C:\Users\46876761\Downloads\TP09_Arana_Baranczuk\obj\Debug\net6.0\TP09_Arana_Baranczuk.pdb
 C:\Users\46876761\Downloads\TP09_Arana_Baranczuk\obj\Debug\net6.0\TP09_Arana_Baranczuk.genruntimeconfig.cache
 C:\Users\46876761\Downloads\TP09_Arana_Baranczuk\obj\Debug\net6.0\ref\TP09_Arana_Baranczuk.dll
+C:\Users\46876761\Downloads\TP09_Arana_Baranczuk\bin\Debug\net6.0\Dapper.dll
+C:\Users\46876761\Downloads\TP09_Arana_Baranczuk\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Users\46876761\Downloads\TP09_Arana_Baranczuk\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Users\46876761\Downloads\TP09_Arana_Baranczuk\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Users\46876761\Downloads\TP09_Arana_Baranczuk\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Users\46876761\Downloads\TP09_Arana_Baranczuk\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\46876761\Downloads\TP09_Arana_Baranczuk\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\46876761\Downloads\TP09_Arana_Baranczuk\obj\Debug\net6.0\TP09_Arana_Baranczuk.csproj.CopyComplete

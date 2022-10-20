@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GR99JmK0MIc9BDyWsDjdl+JgcBQymQBffvpmeAP34m3CaUebDzXf9kmsrbvFaX67XdYwjieaPE5Mp3bgZIc/hg==",
+  "dgSpecHash": "F3czTN2nGdiRqRW5VLdOeycGQLQreFSRGT2w9rFL31JY7zCRkqlOLqC9uqpKM+otijTBjhPQClTJI3WwATmERw==",
   "success": true,
-  "projectFilePath": "c:\\Users\\46876761\\Downloads\\TP09_Arana_Baranczuk\\TP09_Arana_Baranczuk.csproj",
+  "projectFilePath": "C:\\Users\\46876761\\Downloads\\TP09_Arana_Baranczuk\\TP09_Arana_Baranczuk.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\46876761\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\46876761\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",

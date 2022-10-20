@@ -10,16 +10,15 @@
                     <div class="card-body">
                         <div class="card-title">@item.NombreColor</div>
                         <div class="col">
-                            <a href='@Url.Action("Productos", new {Producto=@Producto.IdColor})'>
+                            <a href='@Url.Action("VerDetalleProducto", new {IdColor=item.IdColor})'>
                                 Ver Productos 
                             </a>
-                           
                         </div>
                         </div>
                     </div>
                     </div>
                 }
-                <a class="btn btn-lg, boton" href='@Url.Action("AgregarColor","Home", new{IdTela=@ViewBag.Color.IdColor})' role="button">Agregar Color</a>
+                
             }
         </div>
 </div>
