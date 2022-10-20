@@ -106,4 +106,13 @@ public static class BD
         }
         return product;
     }
+    /*public static List<Usuario> GetUsuario()
+    {
+        List<Usuario> _ListaUsuario = new List<Usuario>();
+        using (SqlConnection db = new SqlConnection(_connectionString))
+        {
+            
+        }
+    }*/
+    
 }
