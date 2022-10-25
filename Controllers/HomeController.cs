@@ -48,9 +48,15 @@ public class HomeController : Controller
         ViewBag.ListaProductos = BD.GetProductoColor(IdColor);
         return View("Productos");
     }
-    public IActionResult AgregarProducto()
+    public IActionResult AgregarProducto(string Clave)
     {
-        return View("AgregarProducto");
+        if(Clave=="Tpfinal"){
+            return View("AgregarProducto");
+        }
+        else{
+            "error";
+            return View("Productos");
+        }
     }
     [HttpPost]
     public IActionResult GuardarProducto(Producto prod, IFormFile File, int IdColor)

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hZAxnf5Ql+dE9xNKYGx6yAhKztsqUQGG8R4nlu6nzrg=",
+  "Hash": "JGCXY1x2eTpiG6KHoVW0kcOZzV22ZPrgvrzgjm7ZZ/k=",
   "Source": "TP09_Arana_Baranczuk",
   "BasePath": "_content/TP09_Arana_Baranczuk",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\46876761\\Downloads\\TP09_Arana_Baranczuk\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TP09_Arana_Baranczuk.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\46876761\\Downloads\\TP09_Arana_Baranczuk\\wwwroot\\.jpg",
+      "SourceId": "TP09_Arana_Baranczuk",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\46876761\\Downloads\\TP09_Arana_Baranczuk\\wwwroot\\",
+      "BasePath": "_content/TP09_Arana_Baranczuk",
+      "RelativePath": ".jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\.jpg"
     },
     {
       "Identity": "C:\\Users\\46876761\\Downloads\\TP09_Arana_Baranczuk\\wwwroot\\carrusel1.png",
