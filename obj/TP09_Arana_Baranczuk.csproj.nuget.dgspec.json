@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\46876761\\Downloads\\TP09_Arana_Baranczuk\\TP09_Arana_Baranczuk.csproj": {}
+    "C:\\Users\\47031761\\Downloads\\TP09_Arana_Baranczuk\\TP09_Arana_Baranczuk.csproj": {}
   },
   "projects": {
-    "C:\\Users\\46876761\\Downloads\\TP09_Arana_Baranczuk\\TP09_Arana_Baranczuk.csproj": {
+    "C:\\Users\\47031761\\Downloads\\TP09_Arana_Baranczuk\\TP09_Arana_Baranczuk.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\46876761\\Downloads\\TP09_Arana_Baranczuk\\TP09_Arana_Baranczuk.csproj",
+        "projectUniqueName": "C:\\Users\\47031761\\Downloads\\TP09_Arana_Baranczuk\\TP09_Arana_Baranczuk.csproj",
         "projectName": "TP09_Arana_Baranczuk",
-        "projectPath": "C:\\Users\\46876761\\Downloads\\TP09_Arana_Baranczuk\\TP09_Arana_Baranczuk.csproj",
-        "packagesPath": "C:\\Users\\46876761\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\46876761\\Downloads\\TP09_Arana_Baranczuk\\obj\\",
+        "projectPath": "C:\\Users\\47031761\\Downloads\\TP09_Arana_Baranczuk\\TP09_Arana_Baranczuk.csproj",
+        "packagesPath": "C:\\Users\\47031761\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\47031761\\Downloads\\TP09_Arana_Baranczuk\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\46876761\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\47031761\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -50,7 +50,7 @@
             },
             "System.Data.SqlClient": {
               "target": "Package",
-              "version": "[4.8.3, )"
+              "version": "[4.8.4, )"
             }
           },
           "imports": [

@@ -50,12 +50,15 @@ public class HomeController : Controller
     }
     public IActionResult AgregarProducto(string Clave)
     {
-        if(Clave=="Tpfinal"){
+        if(Clave=="Tpfinal")
+        {
             return View("AgregarProducto");
         }
-        else{
-            "error";
+        else
+        {
+            
             return View("Productos");
+            
         }
     }
     [HttpPost]
