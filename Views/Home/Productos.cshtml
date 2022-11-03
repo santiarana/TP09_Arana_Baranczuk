@@ -18,37 +18,37 @@
                     </div>
                 </div>
                 }
-                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ModalLoginForm">
-                  Launch demo modal
-                </button>
-
-                <!-- Modal HTML Markup -->
-                <div id="ModalLoginForm" class="modal fade">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-body">
-                                <form role="form" method="POST" action="">
-                                    
-                                    <div class="form-group">
-                                        <label class="control-label">Password</label>
-                                        <div>
-                                            <input type="password" class="form-control input-lg" name="password">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div>
-                                            <button type="submit" class="btn btn-success">
-                                                Register
-                                            </button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div><!-- /.modal-content -->
-                    </div><!-- /.modal-dialog -->
-                </div><!-- /.modal -->
             }
           </div>
+</div>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+    Agregar producto
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Ingrese la contraseña</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="post" action = '@Url.Action("AgregarProducto","Home")' enctype="multipart/form-data">
+            <div class="form-group">
+                <input type="password" id="Clave" name="Clave" placeholder="Contraseña" required></br>
+            </div>
+            <button type="submit" class="btn btn-primary">Confirmar</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
 </div>
     
 <div class="modal fade" id="ModalProducto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

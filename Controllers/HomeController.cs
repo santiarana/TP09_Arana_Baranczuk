@@ -48,32 +48,37 @@ public class HomeController : Controller
         ViewBag.ListaProductos = BD.GetProductoColor(IdColor);
         return View("Productos");
     }
-    public IActionResult AgregarProducto(string Clave)
+    public IActionResult AgregarProducto(string Clave, int IdColor)
     {
         if(Clave=="Tpfinal")
         {
-            return View("AgregarProducto");
+            return View("AgregarProductos");
         }
         else
         {
-            
+            ViewBag.ListaProductos = BD.GetProductoColor(IdColor);
             return View("Productos");
             
         }
     }
     [HttpPost]
-    public IActionResult GuardarProducto(Producto prod, IFormFile File, int IdColor)
+    public IActionResult GuardarProducto(Producto producto, IFormFile File,string NombreColor, string NombreTela)
     {
-        prod.FotoProducto=prod.NombreProducto + ".jpg";
+        int IdTela = BD.GetNombreTela(NombreTela);
+        int IdColor = BD.GetNombreColor(NombreColor);
+        producto.IdTela=IdTela;
+        producto.IdColor=IdColor;
+        
+        producto.FotoProducto=producto.NombreProducto + ".jpg";
         if(File.Length>0)
         {
-            string wwwRootLocal = this.Environment.ContentRootPath + @"\wwwroot\" + prod.FotoProducto;
+            string wwwRootLocal = this.Environment.ContentRootPath + @"\wwwroot\" + producto.FotoProducto;
             using (var stream = System.IO.File.Create(wwwRootLocal))
             {
                 File.CopyToAsync(stream);
             }
         }
-        BD.InsertProducto(prod);
+        BD.InsertProducto(producto);
         ViewBag.ListaProductos = BD.GetProductoColor(IdColor);
         return View("Productos");
     }

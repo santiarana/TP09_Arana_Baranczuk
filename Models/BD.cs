@@ -6,7 +6,7 @@ using System.Linq;
 namespace TP09_Arana_Baranczuk.Models;
 public static class BD
 {
-    private static string _connectionString = @"Server=A-PHZ2-CIDI-020; Database=TPFinal;Trusted_Connection=True;";
+    private static string _connectionString = @"Server=A-phz2-cidi-042; Database=TPFinal;Trusted_Connection=True;";
     public static List<Tela> GetTela(int IdTela)
     {
         List<Tela> _ListaTela = new List<Tela>();
@@ -17,6 +17,17 @@ public static class BD
         }
         return _ListaTela;
     }
+    public static int GetNombreTela(string NombreTela)
+    {
+        int id;
+        using (SqlConnection db = new SqlConnection(_connectionString))
+        {
+            string sql = "SELECT IdTela FROM Tela where NombreTela=@pNombreTela";
+            id=db.QueryFirstOrDefault<int>(sql, new { pNombreTela = NombreTela});
+        }
+        return id;
+    }
+    
     public static List<Color> GetColor(int IdTela)
     {
         List<Color> _ListaColor = new List<Color>();
@@ -26,6 +37,16 @@ public static class BD
             _ListaColor = db.Query<Color>(sql, new{pTela = IdTela}).ToList();
         }
         return _ListaColor;
+    }
+    public static int GetNombreColor(string NombreColor)
+    {
+        int id;
+        using (SqlConnection db = new SqlConnection(_connectionString))
+        {
+            string sql = "SELECT IdColor FROM Color where NombreColor=@pNombreColor";
+            id=db.QueryFirstOrDefault<int>(sql, new { pNombreColor = NombreColor });
+        }
+        return id;
     }
     public static List<Producto> GetProductoColor(int IdColor)
     {
@@ -41,8 +62,8 @@ public static class BD
     {
         using (SqlConnection db = new SqlConnection(_connectionString))
         {
-            string sql = "INSERT INTO Producto(NombreProducto, FotoProducto,NombreTela,NombreColor,FechaDeIngreso,CantidadDisponible,Peso) VALUES (@pNombreProducto,@pFotoProducto,@pNombreTela,@pNombreColor,@pFechaDeIngreso,@pCantidadDisponible,@pPeso)";
-            db.Execute(sql, new { pNombre = producto.NombreProducto, pFotoProducto = producto.FotoProducto, pNombreTela = producto.NombreTela, pNombreColor = producto.NombreColor, pFechaDeIngreso = producto.FechaDeIngreso, pCantidadDisponible = producto.CantidadDisponible, pPeso = producto.Peso });
+            string sql = "INSERT INTO Producto(NombreProducto,FotoProducto,IdTela,IdColor,FechaDeIngreso,CantidadDisponible,Peso) VALUES (@pNombreProducto,@pFotoProducto,@pIdTela,@pIdColor,@pFechaDeIngreso,@pCantidadDisponible,@pPeso)";
+            db.Execute(sql, new { pNombreProducto = producto.NombreProducto, pFotoProducto = producto.FotoProducto, pIdTela = producto.IdTela, pIdColor = producto.IdColor, pFechaDeIngreso = producto.FechaDeIngreso, pCantidadDisponible = producto.CantidadDisponible, pPeso = producto.Peso});
         }
     }
     public static int DeleteColorById(int IdColor)

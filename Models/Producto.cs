@@ -13,7 +13,6 @@ namespace TP09_Arana_Baranczuk.Models;
         private float _Peso;
         private string _NombreTela;
         private string _NombreColor; 
-       
         
         public Producto(int IdProducto, string NombreProducto,string FotoProducto,int IdTela, int IdColor, DateTime FechaDeIngreso, int CantidadDisponible, float Peso,string NombreTela, string NombreColor)
         {
@@ -27,7 +26,6 @@ namespace TP09_Arana_Baranczuk.Models;
             _Peso = Peso; 
             _NombreTela = NombreTela;
             _NombreColor = NombreColor; 
-         
         }
         public Producto()
         {
