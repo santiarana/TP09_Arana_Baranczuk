@@ -6,7 +6,7 @@ using System.Linq;
 namespace TP09_Arana_Baranczuk.Models;
 public static class BD
 {
-    private static string _connectionString = @"Server=A-phz2-cidi-042; Database=TPFinal;Trusted_Connection=True;";
+    private static string _connectionString = @"Server=A-PHZ2-CIDI-020; Database=TPFinal;Trusted_Connection=True;";
     public static List<Tela> GetTela(int IdTela)
     {
         List<Tela> _ListaTela = new List<Tela>();
