@@ -82,12 +82,19 @@ public class HomeController : Controller
         ViewBag.ListaProductos = BD.GetProductoColor(IdColor);
         return View("Productos");
     }
-    public IActionResult EliminarProducto(int IdProducto)
+    public IActionResult EliminarProducto(int IdProducto,int IdColor,int IdTela)
     {
         
         BD.EliminarProducto(IdProducto);
+        
+        
+        ViewBag.ListaTelas = BD.GetTela(IdTela);
+        ViewBag.DetalleTelas=BD.DetalleTela(IdTela);
+        ViewBag.ListaColores = BD.GetColor(IdTela);
+        ViewBag.DetalleColores=BD.DetalleColor(IdTela);
+        ViewBag.ListaProductos = BD.GetProductoColor(IdColor);
         ViewBag.DetalleProducto = BD.DetalleProducto(IdProducto);
-        return View("Productos");
+        return View("Color");
     }
     public Producto VerDetalleProductoAjax(int IdProducto)
     {
