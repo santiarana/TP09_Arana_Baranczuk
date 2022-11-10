@@ -1,8 +1,10 @@
 <form method="post" action = '@Url.Action("GuardarColor","Home")' enctype="multipart/form-data">
     <input type="hidden" id="IdColor" name="IdColor" value=@ViewBag.IdColor>
     Nombre:
-    <input type="text" id="NombreColor" name="Nombre" placeholder="Nombre" required></br>
+    <input type="text" id="NombreColor" name="NombreColor" placeholder="Nombre" required></br>
     Foto:
-    <input type="file" id="Foto" name="File" required></br>
+    <input type="file" id="File" name="File" required></br>
+    Tela:
+    <input type="text" id="NombreTela" name="NombreTela" required></br>
     <button type="submit">Agregar Color</button>
 </form>

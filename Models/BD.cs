@@ -66,12 +66,20 @@ public static class BD
             db.Execute(sql, new { pNombreProducto = producto.NombreProducto, pFotoProducto = producto.FotoProducto, pIdTela = producto.IdTela, pIdColor = producto.IdColor, pFechaDeIngreso = producto.FechaDeIngreso, pCantidadDisponible = producto.CantidadDisponible, pPeso = producto.Peso});
         }
     }
+    public static void InsertColor(Color color)
+    {
+        using (SqlConnection db = new SqlConnection(_connectionString))
+        {
+            string sql = "INSERT INTO Color(NombreColor,FotoColor,IdTela) VALUES (@pNombreColor,@pFotoColor,@pIdTela)";
+            db.Execute(sql, new { pNombreColor = color.NombreColor, pFotoColor = color.FotoColor, pIdTela = color.IdTela});
+        }
+    }
     public static int DeleteColorById(int IdColor)
     {
         int Reg = 0;
         using (SqlConnection db = new SqlConnection(_connectionString))
         {
-            string sql = "DELETE FROM Clientes WHERE IdColor = @pIdColor";
+            string sql = "DELETE FROM Color WHERE IdColor = @pIdColor";
             Reg = db.Execute(sql, new { pIdColor = IdColor });
         }
         return Reg;
@@ -135,7 +143,7 @@ public static class BD
             
         }
     }*/
-    public static int UpdatePorductoMas(int IdProducto, int CantidadDisponible)
+    public static int UpdateProductoMas(int IdProducto, int CantidadDisponible)
     {
         int NuevoIngreso = 0;
         using(SqlConnection db = new SqlConnection(_connectionString))
@@ -145,7 +153,7 @@ public static class BD
             return NuevoIngreso;
         }
     }
-    public static int UpdatePorductoMenos(int IdProducto, int CantidadDisponible)
+    public static int UpdateProductoMenos(int IdProducto, int CantidadDisponible)
     {
         int NuevoIngreso = 0;
         using(SqlConnection db = new SqlConnection(_connectionString))
