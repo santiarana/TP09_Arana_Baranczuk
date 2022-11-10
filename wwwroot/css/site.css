@@ -15,23 +15,32 @@ html {
 
 body {
     margin-bottom: 60px;
+    background-image: url("/fondo.jpg");
 }
 
 .logo {
     height: 80px;
 }
-.carrusel1{
-    margin-top: 2.5%;
+
+.carrusel1 {
+    margin-top: 7%;
     text-align: center;
 }
-.carta{
+
+.carta {
     height: 250px;
     width: auto;
 }
-.bton{
+
+.bton {
     margin-left: 15%;
 }
-.agregar{
+
+.agregar {
     margin-top: 2%;
     margin-left: 1%;
+}
+
+.cartas {
+    margin-top: 3%;
 }
