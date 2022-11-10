@@ -135,5 +135,25 @@ public static class BD
             
         }
     }*/
+    public static int UpdatePorductoMas(int IdProducto, int CantidadDisponible)
+    {
+        int NuevoIngreso = 0;
+        using(SqlConnection db = new SqlConnection(_connectionString))
+        {
+            string sql = "UPDATE Producto SET CantidadDisponible = (CantidadDisponible + @pCantidadDisponible) WHERE IdProducto = @pIdProducto";
+            NuevoIngreso = db.Execute(sql, new{pIdProducto = IdProducto, pCantidadDisponible = CantidadDisponible});
+            return NuevoIngreso;
+        }
+    }
+    public static int UpdatePorductoMenos(int IdProducto, int CantidadDisponible)
+    {
+        int NuevoIngreso = 0;
+        using(SqlConnection db = new SqlConnection(_connectionString))
+        {
+            string sql = "UPDATE Producto SET CantidadDisponible = (CantidadDisponible - @pCantidadDisponible) WHERE IdProducto = @pIdProducto";
+            NuevoIngreso = db.Execute(sql, new{pIdProducto = IdProducto, pCantidadDisponible = CantidadDisponible});
+            return NuevoIngreso;
+        }
+    }
     
 }
