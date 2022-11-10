@@ -135,7 +135,7 @@ public static class BD
             
         }
     }*/
-    public static int UpdatePorductoMas(IdProducto)
+    public static int UpdatePorductoMas(int IdProducto)
     {
         int NuevoIngreso = 0;
         using(SqlConnection db = new SqlConnection(_connectionString))
@@ -145,7 +145,7 @@ public static class BD
             return NuevoIngreso;
         }
     }
-    public static int UpdatePorductoMenos(IdProducto)
+    public static int UpdatePorductoMenos(int IdProducto)
     {
         int NuevoIngreso = 0;
         using(SqlConnection db = new SqlConnection(_connectionString))
