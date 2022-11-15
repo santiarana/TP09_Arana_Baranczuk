@@ -84,7 +84,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <form method="post" href = '@Url.Action("Update","Home", new{CantidadDisponible=item.CantidadDisponible})' class="btn btn-danger" enctype="multipart/form-data">
+        <form method="post" href = '@Url.Action("Update","Home", new{CantidadDisponible=ViewBag.ListaProductos})' class="btn btn-danger" enctype="multipart/form-data">
             <div class="form-group">
                 <input type="text" id="CantidadDisponible" name="CantidadDisponible" required></br>
             </div>
