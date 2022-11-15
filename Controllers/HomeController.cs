@@ -104,18 +104,11 @@ public class HomeController : Controller
     }
 
     [HttpPost]
-    public int UpdateMas(int IdProducto, int CantidadDisponible)
+    public int Update(int IdProducto, int CantidadDisponible)
     {
-        ViewBag.CantidadDisponible=BD.UpdateProductoMas(IdProducto,CantidadDisponible);
+        ViewBag.CantidadDisponible=BD.UpdateProducto(IdProducto,CantidadDisponible);
         return CantidadDisponible;
     }
-    [HttpPost]
-    public int UpdateMenos(int IdProducto, int CantidadDisponible)
-    {
-        ViewBag.CantidadDisponible=BD.UpdateProductoMenos(IdProducto,CantidadDisponible);
-        return CantidadDisponible;
-    }
-
     public IActionResult Privacy()
     {
         return View();

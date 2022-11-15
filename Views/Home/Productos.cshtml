@@ -14,14 +14,9 @@
                                 Más info
                             </button>
                             <a href = '@Url.Action("EliminarProducto","Home", new{IdProducto=item.IdProducto})' class="btn btn-danger ">Eliminar</a>
-                            @{/*<button type="button" class="btn" style="background-color: green;color:white;" data-bs-toggle="modal" data-bs-target="#exampleModalCenter2">
-                                Más stock
-                                <a href = '@Url.Action("UpdateMas","Home", new{CantidadDisponible=item.CantidadDisponible})'></a>
-                            </button>
-                            <button type="button" class="btn" style="background-color: red;color:white;" data-bs-toggle="modal" data-bs-target="#exampleModalCenter3">
-                                Menos stock
-                                <a href = '@Url.Action("UpdateMas","Home", new{CantidadDisponible=item.CantidadDisponible})'></a>
-                            </button>*/}
+                        <button type="button" class="btn agregar" style="background-color: green;color:white;" data-bs-toggle="modal" data-bs-target="#exampleModalCenter2">
+                        Editar Stock
+                        </button>
                         </div>
                     </div>
                     </div>
@@ -76,20 +71,22 @@
     </div>
   </div>
 </div>
-@{/*
+
+
+<!-- Modal -->
 <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle">Ingrese la contraseña</h5>
+        <h5 class="modal-title" id="exampleModalCenterTitle">Nuevo stock</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <form method="post" action = '@Url.Action("GuardarProducto","Home")' enctype="multipart/form-data">
+        <form method="post" href = '@Url.Action("Update","Home", new{CantidadDisponible=item.CantidadDisponible})' class="btn btn-danger" enctype="multipart/form-data">
             <div class="form-group">
-                <input type="password" id="Clave" name="Clave" placeholder="Contraseña" required></br>
+                <input type="text" id="CantidadDisponible" name="CantidadDisponible" required></br>
             </div>
             <button type="submit" class="btn btn-primary">Confirmar</button>
         </form>
@@ -100,30 +97,3 @@
     </div>
   </div>
 </div>
-
-<div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle">Ingrese la contraseña</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form method="post" action = '@Url.Action("Productos","Home")' enctype="multipart/form-data">
-            <div class="form-group">
-                <input type="password" id="Clave" name="Clave" placeholder="Contraseña" required></br>
-            </div>
-            <button type="submit" class="btn btn-primary">Confirmar</button>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-*/
-
-}

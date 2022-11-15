@@ -135,30 +135,12 @@ public static class BD
         }
         return product;
     }
-    /*public static List<Usuario> GetUsuario()
-    {
-        List<Usuario> _ListaUsuario = new List<Usuario>();
-        using (SqlConnection db = new SqlConnection(_connectionString))
-        {
-            
-        }
-    }*/
-    public static int UpdateProductoMas(int IdProducto, int CantidadDisponible)
+    public static int UpdateProducto(int IdProducto, int CantidadDisponible)
     {
         int NuevoIngreso = 0;
         using(SqlConnection db = new SqlConnection(_connectionString))
         {
             string sql = "UPDATE Producto SET CantidadDisponible = (CantidadDisponible + @pCantidadDisponible) WHERE IdProducto = @pIdProducto";
-            NuevoIngreso = db.Execute(sql, new{pIdProducto = IdProducto, pCantidadDisponible = CantidadDisponible});
-            return NuevoIngreso;
-        }
-    }
-    public static int UpdateProductoMenos(int IdProducto, int CantidadDisponible)
-    {
-        int NuevoIngreso = 0;
-        using(SqlConnection db = new SqlConnection(_connectionString))
-        {
-            string sql = "UPDATE Producto SET CantidadDisponible = (CantidadDisponible - @pCantidadDisponible) WHERE IdProducto = @pIdProducto";
             NuevoIngreso = db.Execute(sql, new{pIdProducto = IdProducto, pCantidadDisponible = CantidadDisponible});
             return NuevoIngreso;
         }
