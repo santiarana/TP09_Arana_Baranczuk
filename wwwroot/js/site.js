@@ -14,3 +14,15 @@ function MostrarProducto(IdP, nombre) {
         }
     });
 }
+
+function Editar(IdP, cantidad) {
+    $.ajax({
+        type: 'POST',
+        dataType: 'JSON',
+        url: '/Home/Update',
+        data: { IdProducto: IdP },
+        success: function(response) {
+            $("#Stock").html("<form method='post' href = /Home/Update new{CantidadDisponible=@ViewBag.ListaProductos.CantidadDisponible})'> <div class='form-group'><input type='text' id='CantidadDisponible' name='CantidadDisponible' required></br> </div><button type='submit' class='btn btn-primary'>Confirmar</button></form>");
+        }
+    });
+}

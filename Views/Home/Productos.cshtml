@@ -14,9 +14,9 @@
                                 Más info
                             </button>
                             <a href = '@Url.Action("EliminarProducto","Home", new{IdProducto=item.IdProducto})' class="btn btn-danger ">Eliminar</a>
-                        <button type="button" class="btn agregar" style="background-color: green;color:white;" data-bs-toggle="modal" data-bs-target="#exampleModalCenter2">
-                        Editar Stock
-                        </button>
+                            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#ModalEditar" onclick="Editar(@item.IdProducto,'@item.CantidadDisponible')">
+                                Editar stock
+                            </button>
                         </div>
                     </div>
                     </div>
@@ -72,7 +72,22 @@
   </div>
 </div>
 
-
+<div class="modal fade"  id="ModalEditar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="background-color: grey;">
+      <div class="modal-header">
+        <h5 class="modal-title" style="color: white;">Nuevo stock</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id="Stock" style="color: white;">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+@{/*
 <!-- Modal -->
 <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
@@ -84,7 +99,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <form method="post" href = '@Url.Action("Update","Home", new{CantidadDisponible=ViewBag.ListaProductos})' class="btn btn-danger" enctype="multipart/form-data">
+        <form method="post" href = '@Url.Action("Update","Home", new{CantidadDisponible=@ViewBag.ListaProductos.CantidadDisponible})' class="btn btn-primary" enctype="multipart/form-data">
             <div class="form-group">
                 <input type="text" id="CantidadDisponible" name="CantidadDisponible" required></br>
             </div>
@@ -96,4 +111,5 @@
       </div>
     </div>
   </div>
-</div>
+</div>*/
+}
