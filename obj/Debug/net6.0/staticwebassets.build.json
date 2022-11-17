@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hGHiJnxwXzO1sVx1lCrmPpUaMebXbjVQjEwZvEJUhzY=",
+  "Hash": "2qQw/CcyJLuRO+0/tCaslQa1pOm9eYLk1I/1YFZldhM=",
   "Source": "TP09_Arana_Baranczuk",
   "BasePath": "_content/TP09_Arana_Baranczuk",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\46876761\\Downloads\\TP09_Arana_Baranczuk\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TP09_Arana_Baranczuk.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\46876761\\Downloads\\TP09_Arana_Baranczuk\\wwwroot\\azul.jpg",
+      "SourceId": "TP09_Arana_Baranczuk",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\46876761\\Downloads\\TP09_Arana_Baranczuk\\wwwroot\\",
+      "BasePath": "_content/TP09_Arana_Baranczuk",
+      "RelativePath": "azul.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\azul.jpg"
     },
     {
       "Identity": "C:\\Users\\46876761\\Downloads\\TP09_Arana_Baranczuk\\wwwroot\\carrusel1.jpg",
@@ -1241,6 +1258,40 @@
       "OriginalItemSpec": "wwwroot\\Militar.jpg"
     },
     {
+      "Identity": "C:\\Users\\46876761\\Downloads\\TP09_Arana_Baranczuk\\wwwroot\\rojo.jpg",
+      "SourceId": "TP09_Arana_Baranczuk",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\46876761\\Downloads\\TP09_Arana_Baranczuk\\wwwroot\\",
+      "BasePath": "_content/TP09_Arana_Baranczuk",
+      "RelativePath": "rojo.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\rojo.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\46876761\\Downloads\\TP09_Arana_Baranczuk\\wwwroot\\rosa.jpg",
+      "SourceId": "TP09_Arana_Baranczuk",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\46876761\\Downloads\\TP09_Arana_Baranczuk\\wwwroot\\",
+      "BasePath": "_content/TP09_Arana_Baranczuk",
+      "RelativePath": "rosa.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\rosa.jpg"
+    },
+    {
       "Identity": "C:\\Users\\46876761\\Downloads\\TP09_Arana_Baranczuk\\wwwroot\\telas\\algodon.jpg",
       "SourceId": "TP09_Arana_Baranczuk",
       "SourceType": "Discovered",
@@ -1307,6 +1358,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\telas\\poliester.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\46876761\\Downloads\\TP09_Arana_Baranczuk\\wwwroot\\verde.jpg",
+      "SourceId": "TP09_Arana_Baranczuk",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\46876761\\Downloads\\TP09_Arana_Baranczuk\\wwwroot\\",
+      "BasePath": "_content/TP09_Arana_Baranczuk",
+      "RelativePath": "verde.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\verde.jpg"
     }
   ]
 }

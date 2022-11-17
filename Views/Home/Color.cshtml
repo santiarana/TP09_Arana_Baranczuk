@@ -3,10 +3,10 @@
             @{
                 foreach(Color item in @ViewBag.ListaColores)
                 {
-                <div class="col-3 cartas">
+                <div class="col cartas">
                 
                     <div class="card Carta">
-                        <img src="@item.FotoColor" class="card-img-top carta">
+                        <img src="/@item.FotoColor" class="card-img-top carta">
                     <div class="card-body">
                         <div class="card-title">@item.NombreColor</div>
                         <div class="col">
