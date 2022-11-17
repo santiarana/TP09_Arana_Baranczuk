@@ -13,8 +13,8 @@
                             <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#ModalProducto" onclick="MostrarProducto(@item.IdProducto,'@item.NombreProducto')">
                                 Más info
                             </button>
-                            <a href = '@Url.Action("EliminarProducto","Home", new{IdProducto=item.IdProducto})' class="btn btn-danger ">Eliminar</a>
-                            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#ModalEditar" onclick="Editar(@item.IdProducto,'@item.CantidadDisponible')">
+                            <a href = '@Url.Action("EliminarProducto","Home", new{IdProducto=item.IdProducto})' class="btn btn-danger">Eliminar</a>
+                            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#ModalEditar" onclick="CargarModalModificacion(@item.IdProducto)">
                                 Editar stock
                             </button>
                         </div>
@@ -43,7 +43,7 @@
 </div>
 
 <!-- Button trigger modal -->
-<button type="button" class="btn agregar" style="background-color: green;color:white;" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+<button type="button" class="btn agregar" style="background-color: rgba(80, 200, 120, 0.5);color:black; font-weight:bold;font-size:large;margin-left:30px;" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
     Agregar producto
 </button>
 
@@ -76,10 +76,16 @@
   <div class="modal-dialog">
     <div class="modal-content" style="background-color: grey;">
       <div class="modal-header">
-        <h5 class="modal-title" style="color: white;">Nuevo stock</h5>
+        <h5 class="modal-title" style="color: white;">Cambio de stock</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body" id="Stock" style="color: white;">
+        <!--<form method="post" class="btn btn-primary" enctype="multipart/form-data">
+            <div class="form-group">-->
+                <input type="text" id="CantidadDisponible" name="CantidadDisponible" required></br>
+            <!-- </div> -->
+            <button id="submitStock" type="submit" onclick="Editar(this.value, document.getElementById('CantidadDisponible').value)" class="btn btn-primary">Confirmar</button>
+        <!--</form>-->
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -87,29 +93,4 @@
     </div>
   </div>
 </div>
-@{/*
-<!-- Modal -->
-<div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle">Nuevo stock</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form method="post" href = '@Url.Action("Update","Home", new{CantidadDisponible=@ViewBag.ListaProductos.CantidadDisponible})' class="btn btn-primary" enctype="multipart/form-data">
-            <div class="form-group">
-                <input type="text" id="CantidadDisponible" name="CantidadDisponible" required></br>
-            </div>
-            <button type="submit" class="btn btn-primary">Confirmar</button>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>*/
-}
+

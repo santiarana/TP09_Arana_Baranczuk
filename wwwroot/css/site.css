@@ -47,3 +47,13 @@ body {
 .cartas {
     margin-top: 3%;
 }
+
+.formulario {
+    font-size: x-large;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.colores {
+    background-color: rgba(211, 211, 211, 0.5);
+}

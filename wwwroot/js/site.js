@@ -15,14 +15,20 @@ function MostrarProducto(IdP, nombre) {
     });
 }
 
+function CargarModalModificacion(IdP) {
+    console.log("modal: " + IdP.toString());
+    $("#submitStock").val(IdP);
+}
+
 function Editar(IdP, cantidad) {
+    console.log(IdP);
     $.ajax({
         type: 'POST',
         dataType: 'JSON',
         url: '/Home/Update',
-        data: { IdProducto: IdP },
+        data: { IdProducto: IdP, CantidadDisponible: cantidad },
         success: function(response) {
-            $("#Stock").html("<form method='post' href = /Home/Update new{CantidadDisponible=@ViewBag.ListaProductos.CantidadDisponible})'> <div class='form-group'><input type='text' id='CantidadDisponible' name='CantidadDisponible' required></br> </div><button type='submit' class='btn btn-primary'>Confirmar</button></form>");
+            //$("#Stock").attr('href', "/Home/Update?CantidadDisponible=" + cantidad.toString());
         }
     });
 }
